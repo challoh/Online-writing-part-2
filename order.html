@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="style.css">
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+   <div class="sticky-section">
+    
+      <nav>
+        <nav>
+          <div class="logo">LOGO</div>
+          <div class="menu">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="">SERVICES</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">GALLERY</a></li>
+                  <li><a href="">OUR TEAM</a></li>
+                
+  
+              </ul>             
+          </div>
+      </nav>
+      </nav>
+    </div>
+
+
+    <div class="container-details">
+      <ul>
+        <li><h2>Paper Details</h2></li>
+      </ul>
+
+      <hr color="green" size="5">
+
+
+
+      <form action="action_page.php">
+      
+        <div class="row">
+          <div class="col-25">
+            <label for="Service">Service</label>
+          </div>
+          <div class="col-75">
+            <select id="Service" name="Service">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+            <label for="paper">Type of Paper</label>
+          </div>
+          <div class="col-75">
+            <select id="Paper" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+            <label for="Subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <select id="Subject" name="Subject">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+            <label for="Topic">Topic</label>
+          </div>
+          <div class="col-75">
+            <input type="text" style="width: 27em;">
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-25">
+            <label for="Instructions">Instructions</label>
+          </div>
+          <div class="col-75">
+            <input type="text" style="width: 27em; height: 9em;">
+          </div>
+        </div>
+
+       <button class="button button4">12px</button>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-calculation" style="margin-top: 2em;">
+
+      <ul>
+        <li><h3>Price Calculation</h3></li>
+      </ul>
+      
+      <hr color="green" size="5">
+
+
+      <form action="action_page.php">
+         <div class="row">
+            <div class="col-25">
+              <label for="Urgency">Urgency</label>
+            </div>
+            <div class="col-75">
+              <select id="Urgency" name="Urgency">
+                <option value="6hrs">6hrs</option>
+                <option value="12hrs">12hrs</option>
+                <option value="24hrs">24hrs</option>
+                <option value="48hrs">48hrs</option>
+                <option value="72hrs">72hrs</option>
+                <option value="96hr">96hrs</option>
+                <option value="morethan96hrs">More than 96hrs</option>
+              </select>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="col-75"> -->
+
+   
+
+
+
+
+<div class="sourcesnumber">
+
+  <label for="sourcesnumber">Number of sources</label>
+
+  <button onclick="decrement()">-</button>
+  <!-- <h2 id="root"></h2>   -->
+  <input type="number" value="0" min="0" max="500" id="root" class="root">
+   <button onclick="increment()">+</button>
+  
+     <script>
+       var data=0
+       document.getElementsByClassName("root").innerText=data;
+       function decrement(){
+         data=data-1
+         document.getElementById("root").innerText=data;
+       }
+       function increment(){
+         data=data+1;
+         document.getElementsByClassName("root").innerText=data
+       }
+     </script>
+</div>
+
+
+
+
+
+
+<div class="spacing">
+
+<label for="spacing">Spacing</label>
+
+  <input type="radio" name="kelamin" class="form-radioo" id="pria">
+  <label for="pria" class="form-labell">Double</label>
+  
+  <input type="radio" name="kelamin" class="form-radioo" id="GPY">
+  <label for="GPY" class="form-labell">Single</label>
+  
+
+</div>
+
+        
+            <!-- <div class="quantity">
+              <label for="quantity">Number Of sources</label>
+              <input type="number" min="0" max="9" step="1" value="0">
+            </div> -->
+          
+        
+
+
+
+
+
+          <!-- </div> -->
+        
+       
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Academic">Academic Level</label>
+            </div>
+            <div class="col-75">
+              <select id="Academic" name="Academic">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+            </div>
+          </div>
+
+
+ 
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Preffered Writer">Preffered Writer</label>
+            </div>
+            <div class="col-75">
+              <input type="text" style="width: 27em;">
+            </div>
+          </div>
+
+<div class="additional-services">
+  <div class="row">
+    <div class="col-25">
+      <label for="Additional services">Additional services</label>
+    </div>
+    <div class="col-75">
+
+      <ul>
+        <li>   <label>
+          <input type="checkbox" class="option-input checkbox" checked />
+          
+          Originality report
+        </label></li>
+
+        <li> 
+           <label>
+          <input type="checkbox" class="option-input checkbox" />
+          Urgent writer selection
+        </label>
+        </li>
+
+        <li> 
+          <label>
+            <input type="checkbox" class="option-input checkbox" />
+            I'd like to get a draft
+          </label>
+        </li>
+
+        <li>
+          <label>
+            <input type="checkbox" class="option-input checkbox" />
+            1-page summary
+          </label>
+        </li>
+        
+        <li>
+          <label>
+            <input type="checkbox" class="option-input checkbox" />
+            Proofreading service
+          </label>
+        </li>
+
+
+        <div class="radio-group">
+         
+          
+         
+            </div>
+  
+      </ul>
+    </div>
+  </div>
+</div>
+       
+
+
+
+<div>
+
+
+ 
+</div>
+<div>
+
+</div>
+
+
+
+
+
+          <div class="row">
+            <div class="col-25">
+              <label for="Discount code">Discount code</label>
+            </div>
+            <div class="col-75">
+              <input type="text" style="width: 27em;">
+            </div>
+          </div>
+
+
+
+
+
+       
+
+
+      
+
+        </form>
+
+
+        <div class="group-total">
+          <div class="total-label">
+            <label for="order-total">Order Total</label>
+          </div>
+          <div class="f-total">
+            <span>$</span>
+            <span>12</span>
+            <span>.</span>
+            <span>18</span>
+          </div>
+        </div>
+    </div>
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <form action="action_page.php">
+      <div class="container-registration">
+
+        <div class="div">
+          <h1>Register</h1>
+
+
+ 
+
+      <hr color="green" size="5">
+
+
+      
+    
+
+        <div class="row">
+          <div class="col-25">
+        <label for="email"><b>Email</b></label>
+          </div>
+          <div class="col-75">
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25">
+            <label for="psw"><b>Password</b></label>
+          </div>
+          <div class="col-75">
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-25"> 
+             <label for="psw-repeat"><b>Repeat Password</b></label>
+          </div>
+          <div class="col-75">
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+          </div>
+        </div>
+    
+        
+    
+      
+      
+    
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn">Proceed For Safe Payment</button>
+      </div>
+    
+    </form>
+
+</body>
+</html>

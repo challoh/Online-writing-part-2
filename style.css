@@ -1,0 +1,529 @@
+.sticky-section{
+  overflow:hidden;
+  background-color: rgba(253, 253, 253, 0.966);
+  margin-bottom:50px;
+  width:100%; 
+  color:wheat; 
+  position:-webkit-sticky;
+  position:sticky;
+  top:0px;
+}
+
+.logo{
+  /* position: fixed; */
+  float: left;
+  margin: 16px 36px;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+nav{
+  /* position: fixed; */
+  width: 100%;
+}
+nav ul{
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color:black;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  transition: 1s;
+}
+
+nav.black ul{
+  background: #000;
+
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+
+/* Detailed Css */
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 10px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: right; */
+  margin-left: 12em;
+  /* margin-top: 2em; */
+  /* margin-bottom: 3px; */
+}
+
+/* Style the container */
+
+/* PAPER DETAILES */
+
+.container-details {
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+    background-color: rgba(253, 253, 253, 0.966);
+    width: 45em;
+    height: fit-content;
+    margin-left: 15em;
+    text-align: center;
+    
+    
+}
+.container-details ul{
+  list-style: none;
+}
+.container-details h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+
+/* PAPER DETAILS */
+
+
+
+/* PRICE CALCULATION */
+
+.container-calculation{
+  border:1px solid #4CAF50;
+  border-radius: 5px;
+    background-color: rgba(253, 253, 253, 0.966);
+    width: 45em;
+    height: fit-content;
+    margin-left: 15em;
+    text-align: center;
+}
+.container-calculation ul{
+  list-style: none;
+}
+.container-calculation h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+
+/* INCREMENTS */
+
+
+button{
+  width: 70px;
+  height: 50px;
+  outline: none;
+}
+
+input{
+  width: 70px;
+  height: 40px;
+  outline: none;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
+
+.sourcesnumber{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-right: 16em;
+
+}
+.sourcesnumber label{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+
+
+/* INCREMENTS */
+
+/* RADIOS */
+.form-labell{
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px ;
+  text-align: center;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  justify-content: space-between;
+  }
+  .form-radioo{
+  display: none;
+  }
+  .form-radioo:checked + .form-labell{
+  background: grey;
+  }
+
+  .spacing label{
+    /* float: left; */
+    margin-right: 3.5em;
+    width: 25%;
+    margin-top: 6px; 
+    
+  }
+  .additional-services {
+    margin-left: 2em;
+    margin-right: 20%;
+    display: grid;
+  }
+
+  @keyframes click-wave {
+    0% {
+      height: 40px;
+      width: 40px;
+      opacity: 0.35;
+      position: relative;
+    }
+    100% {
+      height: 200px;
+      width: 200px;
+      margin-left: -80px;
+      margin-top: -80px;
+      opacity: 0;
+    }
+  }
+  
+  .option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    display: grid;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+  }
+  .option-input:hover {
+    background: #9faab7;
+  }
+  .option-input:checked {
+    background: #40e0d0;
+  }
+  .option-input:checked::before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #40e0d0;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+  .option-input.radio {
+    border-radius: 50%;
+  }
+  .option-input.radio::after {
+    border-radius: 50%;
+  }
+  
+
+
+  
+
+
+/* RADIOS */
+
+
+
+.group-total{
+  display: flex;
+  justify-content: space-between;
+}
+.total-label{
+  margin-left: 7em;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.f-total{
+margin-right: 19em;
+font-size: 20px;
+font-weight: 700;
+margin-top: 10px;
+padding: 1px 1px 1px 1px;
+}
+
+/* PRICE CALCULATION */
+
+
+/* REGISTRATION */
+.container-registration{
+  border:1px solid #4CAF50;
+  border-radius: 5px;
+    background-color: rgba(253, 253, 253, 0.966);
+    width: 45em;
+    height: fit-content;
+    margin-left: 15em;
+    margin-top: 3em;
+    text-align: center;
+}
+.container-registration h1{
+  margin-right: 15em;
+}
+
+.switch{
+  display:inline-flex;
+}
+
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20em;
+  opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+  opacity:1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+  color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  }
+
+
+
+
+/* REGISTRATION */
+
+
+
+/* Alvo replacements */
+.alvo{
+float: left;
+width: 25%;
+margin: 20px;
+}
+.alvo-input{
+float: left;
+  width: 8em;
+  margin: 20px;
+ 
+}
+
+/* Alvo replacements */
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  /* margin-top: 1.5em; */
+  margin-bottom: 1.5em;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 3px;
+  padding-left: 2px;
+  /* margin-top: 1.5em; */
+  margin-bottom: 1.5em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* End of Detailed css */
+
+.button-submit{
+  background-color: #4CAF50;
+  color: #ccc;
+  height: 3em;
+  width: 4em;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+.button4 {border-radius: 12px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+input[type=radio]{
+position: absolute;
+visibility: hidden;
+display: none;
+}
+.label-radio{
+color:gray;
+display: inline-block;
+cursor: pointer;
+font-weight: bold;
+padding: 5px 20px;
+}
+input[type=radio]:checked + label{
+color: gray;
+background-color: #000;
+}
+
+label + input[type=radio] + label{
+border-left: solid 3px gray;
+}
+.radio-group{
+border: solid gray;
+display: inline-block;
+margin: 20px;
+border-radius: 10px;
+overflow: hidden;
+} */
+
+.radio-group1{
+border: solid gray;
+display: inline-block;
+margin: 20px;
+justify-content: space-around;
+/* border-radius: 10px; */
+overflow: hidden;
+
+}
+
+.radio-group2{
+border: solid gray;
+display: inline-block;
+margin: 20px;
+justify-content: space-around;
+/* border-radius: 10px; */
+overflow: hidden;
+
+}
+
+.checkbox{
+margin-left: 1px;
+
+}
+
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+padding: 16px;
+margin: 5em;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+width: 35em;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+/* Set a style for the submit/register button */
+
+
+
